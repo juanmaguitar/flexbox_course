@@ -11,5 +11,8 @@
   },
   "scripts": {
     "test": "echo 'this is a test script from npm package.json'"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4"
   }
 }

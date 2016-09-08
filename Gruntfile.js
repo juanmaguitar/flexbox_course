@@ -5,6 +5,15 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json')
 	});
 
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.config('autoprefixer', {
+    single_file: {
+        src: 'src/style.css',
+        dest: 'build/style.css'
+    }
+	})
+
+
 	/* watch */
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.config('watch', {
@@ -33,6 +42,6 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('serve', ['connect:livereload','watch:all']);
-	grunt.registerTask('default', ['serve']);
+	grunt.registerTask('default', ['autoprefixer', 'serve']);
 
 };
