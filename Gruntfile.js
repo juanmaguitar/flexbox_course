@@ -21,7 +21,8 @@ module.exports = function(grunt) {
 			livereload: '<%= connect.options.livereload %>',
 		},
 		all : {
-			files: ['<%= baseFolder %>/**/*', 'Gruntfile.js']
+			files: ['<%= baseFolder %>/**/*', 'Gruntfile.js'],
+			tasks: ['autoprefixer']
 		}
 	});
 
