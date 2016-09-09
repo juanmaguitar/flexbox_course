@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 	grunt.config('autoprefixer', {
     single_file: {
         src: 'src/style.css',
-        dest: 'build/style.css'
+        dest: 'public/style.css'
     }
 	})
 
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 		livereload: {
 			options: {
 				open: true,
-				base: '<%= baseFolder %>'
+				base: '<%= baseFolder %>/public'
 			}
 		}
 	});
