@@ -2,75 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Flexbox Demo</title>
-<!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="libs/siimple/dist/siimple.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css" crossorigin="anonymous">
+  <title>FlexBox Nav</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-  <style>
-
-    .container {
-      width: 800px;
-      margin: 0 auto;
-    }
-    header {
-      background: black;
-    }
-    .menu ul {
-      font-size: 3vh;
-      list-style: none;
-      height:100px;
-      display:flex;
-    }
-    .menu li {
-      display:flex;
-    }
-    .menu a {
-      display:flex;
-      color: white;
-      align-items: center;
-      padding:0 20px;
-    }
-    .menu a:hover {
-      background: SteelBlue;
-      text-decoration: none;
-    }
-    #login {
-      margin-left: auto;
-    }
-    .menu a i {
-      margin-right:10px;
-    }
-
-  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="#">
-              <i class="fa fa-home"></i>
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-user"></i>
-              <span>About me</span>
-            </a>
-          </li>
-          <li id="login">
-            <a href="#">
-              <i class="fa fa-sign-in"></i>
-              <span>Login</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
 
-  </header>
+
+  <div class="cover">
+
+
+    <form  class="flex-form">
+
+      <input type="search" placeholder="Where do you want to go?">
+
+      <label for="from">From</label>
+      <input type="date" name="from">
+
+      <label for="from">To</label>
+      <input type="date" name="to">
+
+      <select name="" id="">
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guest</option>
+        <option value="3">3 Guest</option>
+        <option value="4">4 Guest</option>
+        <option value="5">5 Guest</option>
+      </select>
+
+      <input type="submit" value="Search">
+
+    </form>
+
+  </div>
+
+  <video  class="dog" src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Coverr-Lulu.mp4" autoplay loop></video>
+
 </body>
 </html>
