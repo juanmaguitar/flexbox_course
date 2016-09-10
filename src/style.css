@@ -68,16 +68,24 @@ a {
 
 .cover {
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
+  align-content:center;
+  background: rgba(0,0,0,0.5);
 }
 
-.flex-form {
-  display:flex;
-  border:20px solid rgba(0,0,0,0.3);
-  border-radius:5px;
+
+.cover h2 {
+  text-align:center;
+  padding:0 10px;
+  font-size:7vw;
+  color: white;
+  font-family: 'Original Surfer';
+  text-shadow: 5px 5px 2px black;
+}
+.cover img {
+  margin-top:-100px;
+  width:500px;
 }
 
-input[type="search"] {
-  flex-basis:500px;
-}

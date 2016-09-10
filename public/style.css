@@ -71,23 +71,32 @@ a {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
   -webkit-box-pack:center;
       -ms-flex-pack:center;
           justify-content:center;
   -webkit-box-align:center;
       -ms-flex-align:center;
           align-items:center;
+  -ms-flex-line-pack:center;
+      align-content:center;
+  background: rgba(0,0,0,0.5);
 }
 
-.flex-form {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  border:20px solid rgba(0,0,0,0.3);
-  border-radius:5px;
+
+.cover h2 {
+  text-align:center;
+  padding:0 10px;
+  font-size:7vw;
+  color: white;
+  font-family: 'Original Surfer';
+  text-shadow: 5px 5px 2px black;
+}
+.cover img {
+  margin-top:-100px;
+  width:500px;
 }
 
-input[type="search"] {
-  -ms-flex-preferred-size:500px;
-      flex-basis:500px;
-}
