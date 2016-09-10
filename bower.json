@@ -1,0 +1,21 @@
+{
+  "name": "flexbox_course",
+  "description": "",
+  "main": "Gruntfile.js",
+  "authors": [
+    "JuanMa Garrido <JuanMa.Garrido@gmail.com> (http://apuntesjs.com/)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/juanmaguitar/flexbox_course",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "siimple": "^1.3.6",
+    "font-awesome": "^4.6.3"
+  }
+}
